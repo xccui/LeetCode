@@ -35,7 +35,7 @@ public class Solution {
     }
 
     public static void main(String args[]) {
-        CombinationCode solution = new CombinationCode();
+        Solution solution = new Solution();
         System.out.println(solution.combinationSum(new int[]{2, 3, 6, 7}, 7));
     }
 }
