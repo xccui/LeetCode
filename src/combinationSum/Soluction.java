@@ -1,3 +1,5 @@
+package combinationSum;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -6,7 +8,7 @@ import java.util.List;
 /**
  * Created by xccui on 9/5/15.
  */
-public class Solution {
+public class Soluction {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> resultList = new LinkedList<List<Integer>>();
         Arrays.sort(candidates);
@@ -35,7 +37,7 @@ public class Solution {
     }
 
     public static void main(String args[]) {
-        CombinationCode solution = new CombinationCode();
-        System.out.println(solution.combinationSum(new int[]{2, 3, 6, 7}, 7));
+       // Solution solution = new Solution();
+       // System.out.println(solution.combinationSum(new int[]{2, 3, 6, 7}, 7));
     }
 }
