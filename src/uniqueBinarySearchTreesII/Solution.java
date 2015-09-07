@@ -7,11 +7,6 @@ import java.util.List;
  * Created by xccui on 9/6/15.
  */
 public class Solution {
-    public static void main(String args[]) {
-        Solution solution = new Solution();
-        System.out.println(solution.generateTrees(1));
-    }
-
     public List<TreeNode> generateTrees(int n) {
         List<TreeNode>[][] nodes = new LinkedList[n + 2][];
         for (int i = 0; i < nodes.length; i++) {
@@ -26,9 +21,6 @@ public class Solution {
 
     public void generate(List<TreeNode>[][] nodes, int a, int b) {
         nodes[a][b] = new LinkedList<TreeNode>();
-        if (a == 0 || b == 0 || a == nodes.length || b == nodes.length) {
-            return;
-        }
         if (a == b) {
             nodes[a][b].add(new TreeNode(a));
         } else {
@@ -64,4 +56,9 @@ public class Solution {
             }
         }
     }
+    public static void main(String args[]) {
+        Solution solution = new Solution();
+        System.out.println(solution.generateTrees(5));
+    }
+
 }

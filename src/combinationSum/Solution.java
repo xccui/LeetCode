@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by xccui on 9/5/15.
  */
-public class Soluction {
+public class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> resultList = new LinkedList<List<Integer>>();
         Arrays.sort(candidates);
@@ -37,7 +37,7 @@ public class Soluction {
     }
 
     public static void main(String args[]) {
-        Solution solution = new Solution();
-        System.out.println(solution.combinationSum(new int[]{2, 3, 6, 7}, 7));
+       Solution solution = new Solution();
+       System.out.println(solution.combinationSum(new int[]{2, 3, 6, 7}, 7));
     }
 }
